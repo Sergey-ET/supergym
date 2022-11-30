@@ -1,0 +1,206 @@
+.major {
+  padding-top: 51px;
+  padding-bottom: 51px;
+  background: $angular-desktop;
+
+  @include vp-1023 {
+    padding-top: 82px;
+    padding-bottom: 82px;
+    background: $angular-tablet;
+  }
+
+  @include vp-767 {
+    padding-top: 115px;
+    padding-bottom: 80px;
+    background: $angular-mobile;
+  }
+}
+
+.major__container {
+  display: flex;
+  padding: 0 49px;
+
+  @include vp-1023 {
+    justify-content: space-between;
+  }
+
+  @include vp-767 {
+    justify-content: center;
+  }
+}
+
+.major__wrapper {
+  margin-right: 64px;
+
+  @include vp-1023 {
+    margin-right: 28px;
+  }
+
+  @include vp-767 {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.major__sub-wrapper {
+  display: flex;
+  margin-bottom: 50px;
+
+  @include vp-1023 {
+    margin-bottom: 37px;
+  }
+
+  @include vp-767 {
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+}
+
+.major__list {
+  margin: 0;
+  margin-top: 305px;
+  padding: 0;
+  width: 113px;
+  list-style: none;
+
+  @include vp-1023 {
+    margin-top: 186px;
+    margin-right: 18px;
+  }
+
+  @include vp-767 {
+    margin-top: 118px;
+    margin-right: -18px;
+  }
+}
+
+.major__item {
+  font-size: 14px;
+  line-height: 150%;
+  text-align: right;
+  color: $color-default-white;
+}
+
+.major__inner {
+  margin-top: 113px;
+  margin-left: -35px;
+
+  @include vp-1023 {
+    margin-top: 52px;
+    margin-left: 0;
+  }
+
+  @include vp-767 {
+    margin-top: -6px;
+  }
+}
+
+.major span {
+  display: block;
+  margin-right: 52px;
+  margin-bottom: 12px;
+  font-family: $ff-alumni;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: right;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    margin-right: 8px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    line-height: 41px;
+  }
+
+  @include vp-767 {
+    margin-right: 2px;
+    margin-bottom: 13px;
+    font-size: 27px;
+    line-height: 34px;
+  }
+}
+
+.major h1 {
+  margin: 0;
+  margin-left: 1px;
+  width: 298px;
+  font-family: $ff-alumni;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 93px;
+  line-height: 110px;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  text-align: right;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    width: 195px;
+    margin-left: 0;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 86px;
+    text-transform: none;
+  }
+
+  @include vp-767 {
+    letter-spacing: 0.037em;
+  }
+}
+
+.major__link {
+  display: block;
+  width: 233px;
+  margin-left: auto;
+  padding: 19px 15px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    width: 187px;
+  }
+
+  @include vp-767 {
+    padding-top: 19px;
+    padding-bottom: 18px;
+    width: 100%;
+  }
+}
+
+.major__image {
+  margin-right: 170px;
+  width: 500px;
+  height: 556px;
+  background-image: url("../img/main-desktop.webp");
+  background-size: cover;
+  background-position: 70% 50%;
+
+  @include retina {
+    background-image: url("../img/main-desktop@2x.webp");
+  }
+
+  @include vp-1023 {
+    margin-right: 0;
+    width: 324px;
+    height: 390px;
+    background-image: url("../img/main-tablet.webp");
+    background-position: 50% 0;
+
+    @include retina {
+        background-image: url("../img/main-tablet@2x.webp");
+      }
+    }
+
+  @include vp-767 {
+    display: none;
+  }
+}

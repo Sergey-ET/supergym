@@ -799,6 +799,147 @@ button,
   pointer-events: auto;
 }
 
+.page-header {
+  position: absolute;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.page-header__logo {
+  font-family: "Alumni Sans", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.page-header__phone {
+  margin-left: 20px;
+  margin-bottom: 12px;
+  font-family: "Alumni Sans", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.major {
+  padding-top: 51px;
+  padding-bottom: 51px;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+}
+
+.major__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 49px;
+}
+
+.major__wrapper {
+  margin-right: 64px;
+}
+
+.major__sub-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.major__list {
+  margin: 0;
+  margin-top: 305px;
+  padding: 0;
+  width: 113px;
+  list-style: none;
+}
+
+.major__item {
+  font-size: 14px;
+  line-height: 150%;
+  text-align: right;
+  color: #ffffff;
+}
+
+.major__inner {
+  margin-top: 113px;
+  margin-left: -35px;
+}
+
+.major span {
+  display: block;
+  margin-right: 52px;
+  margin-bottom: 12px;
+  font-family: "Alumni Sans", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: right;
+  color: #ffffff;
+}
+
+.major h1 {
+  margin: 0;
+  margin-left: 1px;
+  width: 298px;
+  font-family: "Alumni Sans", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 93px;
+  line-height: 110px;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  text-align: right;
+  color: #ffffff;
+}
+
+.major__link {
+  display: block;
+  width: 233px;
+  margin-left: auto;
+  padding: 19px 15px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.major__image {
+  margin-right: 170px;
+  width: 500px;
+  height: 556px;
+  background-image: url("../img/main-desktop.webp");
+  background-size: cover;
+  background-position: 70% 50%;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -844,6 +985,89 @@ button,
   .container {
     padding: 0 45px;
   }
+
+  .page-header {
+    padding-top: 34px;
+    padding-bottom: 25px;
+  }
+
+  .page-header__logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .page-header__phone {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+  }
+
+  .major {
+    padding-top: 82px;
+    padding-bottom: 82px;
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  }
+
+  .major__container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .major__wrapper {
+    margin-right: 28px;
+  }
+
+  .major__sub-wrapper {
+    margin-bottom: 37px;
+  }
+
+  .major__list {
+    margin-top: 186px;
+    margin-right: 18px;
+  }
+
+  .major__inner {
+    margin-top: 52px;
+    margin-left: 0;
+  }
+
+  .major span {
+    margin-right: 8px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    line-height: 41px;
+  }
+
+  .major h1 {
+    width: 195px;
+    margin-left: 0;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 86px;
+    text-transform: none;
+  }
+
+  .major__link {
+    width: 187px;
+  }
+
+  .major__image {
+    margin-right: 0;
+    width: 324px;
+    height: 390px;
+    background-image: url("../img/main-tablet.webp");
+    background-position: 50% 0;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .major__image {
+    background-image: url("../img/main-tablet@2x.webp");
+  }
 }
 
 @media (max-width: 767px) {
@@ -863,10 +1087,85 @@ button,
   .modal--fit-content .modal__content {
     width: 100%;
   }
+
+  .page-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .page-header__logo {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .page-header__phone {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .major {
+    padding-top: 115px;
+    padding-bottom: 80px;
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  }
+
+  .major__container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .major__wrapper {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .major__sub-wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .major__list {
+    margin-top: 118px;
+    margin-right: -18px;
+  }
+
+  .major__inner {
+    margin-top: -6px;
+  }
+
+  .major span {
+    margin-right: 2px;
+    margin-bottom: 13px;
+    font-size: 27px;
+    line-height: 34px;
+  }
+
+  .major h1 {
+    letter-spacing: 0.037em;
+  }
+
+  .major__link {
+    padding-top: 19px;
+    padding-bottom: 18px;
+    width: 100%;
+  }
+
+  .major__image {
+    display: none;
+  }
 }
 
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.7;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .major__image {
+    background-image: url("../img/main-desktop@2x.webp");
   }
 }
