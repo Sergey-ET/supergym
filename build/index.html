@@ -52,6 +52,41 @@
             <div class="major__image"></div>
           </div>
         </section>
+        <section class="gym">
+          <div class="gym__image-wrapper"></div>
+          <div class="container gym__container">
+            <div class="gym__wrapper">
+              <h2>Тренажерный зал</h2>
+              <span>Просторный зал площадью 900 кв/м</span>
+              <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех&nbsp;спортсменов.</p>
+              <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            </div>
+            <picture>
+              <source media="(min-width: 1024px)"
+                      srcset="./img/gym-desktop.webp 1x, ./img/gym-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/gym-mobile.webp 1x, ./img/gym-mobile@2x.webp 2x">
+              <img class="gym__image" src="./img/gym-desktop.jpg"
+                   alt="Тренажёрный зал с белыми стенами и большим количеством разнообразных тренажёров." width="660" height="401"
+                   srcset="./img/gym-desktop@2x.jpg 2x">
+            </picture>
+
+            <div class="gym__video" id="player">
+              <picture>
+                <source media="(min-width: 1024px)"
+                        srcset="./img/video-desktop.webp 1x, ./img/video-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="./img/video-tablet.webp 1x, ./img/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/video-mobile.webp 1x, ./img/video-mobile@2x.webp 2x">
+                <img class="gym__video-image" src="./img/video-desktop.jpg"
+                     alt="Тренажёрный зал с белыми стенами и большим количеством разнообразных тренажёров." width="364" height="228"
+                     srcset="./img/video-desktop@2x.jpg 2x">
+              </picture>
+              <a href="https://www.youtube.com/watch?v=9TZXsZItgdw" class="gym__link" target="_blank">
+                <img src="./img/svg/play-desktop.svg" alt="Включить воспроизведение видео." class="gym__video-play" width="100" height="100">
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
         <div class="container"></div>
@@ -86,7 +121,7 @@
         </div>
       </div>
     </div>
-
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
