@@ -54,6 +54,12 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   color: $color-default-white;
+  transition: opacity $trans-default;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 
   @include vp-1023 {
     margin-bottom: 0;

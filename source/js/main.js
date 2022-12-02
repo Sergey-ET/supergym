@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {scrollToElement} from './modules/scroll';
 import {playVideo} from './modules/play-video.js';
+import {toggleTab} from './modules/toggle-tab.js';
 
 // ---------------------------------
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     playVideo();
+    toggleTab();
   });
 });
 

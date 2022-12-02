@@ -15,13 +15,16 @@ $color-sapphire-opacity-05:         rgba(16, 38, 84, 0.5);
 $color-sapphire-opacity-089:        rgba(16, 38, 84, 0.89);
 $color-crimson:                     #d10a42;
 $color-grey:                        #787878;
+$color-whisper:                     #e8e8e8;
 $color-grey-opacity-02:             rgba(120, 120, 120, 0.2);
 $color-light-slate-grey:            #74819c;
 $color-spindle:                     #b6bdcc;
 $color-egyptian-blue:               #103aae;
 $color-persian-blue:                #2e35ac;
 $color-resolution-blue:             #1c3374;
+$color-cobalt:                      #003EB7;
 $color-dark-cerulean-opacity-05:    rgba(20, 54, 122, 0.5);
+$color-chambray:                    #495a7d;
 $color-ghost-white:                 #f8f9fc;
 $color-torch-red:                   #ed0233;
 
@@ -35,7 +38,7 @@ $angular-mobile:                    conic-gradient(from 171.43deg at 35.31% 34.2
 $red-to-blue-to-97:                 linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 $red-to-blue-to-127:                linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
 $red-to-blue-to-142:                linear-gradient(142.51deg, #D10A42 0%, #0041CA 87.33%);
-
+$to-right-bottom:                   linear-gradient(to right bottom,#d10a43 0%,#02359e 100%);
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
 // Typography
