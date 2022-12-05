@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {scrollToElement} from './modules/scroll';
 import {playVideo} from './modules/play-video.js';
 import {toggleTab} from './modules/toggle-tab.js';
+import {getSlider} from './modules/get-slider.js';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     playVideo();
     toggleTab();
+    getSlider();
   });
 });
 

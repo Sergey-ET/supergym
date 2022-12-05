@@ -1,0 +1,351 @@
+.coaches {
+  padding-top: 48px;
+  padding-bottom: 91px;
+  height: 100%;
+
+  @include vp-1023 {
+    padding-top: 67px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 45px;
+    padding-bottom: 70px;
+  }
+}
+
+.coaches__container {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 60px;
+
+  @include vp-1023 {
+    max-width: 678px;
+    padding: 0 56px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 0 47px;
+  }
+}
+
+.coaches__swiper {
+  position: relative;
+
+  &--nojs {
+    overflow: visible;
+  }
+}
+
+.coaches__swiper-wrapper {
+  &--nojs {
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include vp-767 {
+      justify-content: center;
+    }
+  }
+}
+
+.coaches h2 {
+  margin-top: 0;
+  margin-left: 2px;
+  margin-bottom: 48px;
+  font-family: $ff-alumni;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+
+  @include vp-1023 {
+    margin-left: -6px;
+    margin-bottom: 30px;
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-bottom: 42px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.coaches__swiper-slide {
+  position: relative;
+  width: 260px;
+  height: 294px;
+  padding: 51px 0 52px;
+  color: $color-default-white;
+  overflow-y: scroll;
+
+  @include vp-1023 {
+    padding: 53px 0 51px;
+  }
+
+  @include vp-767 {
+    height: 274px;
+    padding: 41px 0 40px;
+  }
+
+  &--coach-1 {
+    background-image: url("../img/coaches-desktop-1.webp");
+    background-position: center 20%;
+
+    @include retina {
+      background-image: url("../img/coaches-desktop-1@2x.webp") center;
+      background-size: cover;
+      background-position: center 20%;
+    }
+
+    &:hover {
+      background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-1.webp");
+      background-position: center 20%;
+
+      @include retina {
+        background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-1@2x.webp");
+        background-size: cover;
+        background-position: center 20%;
+      }
+    }
+  }
+
+  &--coach-2 {
+    background-image: url("../img/coaches-desktop-2.webp");
+    background-position: center 20%;
+
+    @include retina {
+      background-image: url("../img/coaches-desktop-2@2x.webp");
+      background-size: cover;
+      background-position: center 20%;
+    }
+
+    &:hover {
+      background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-2.webp");
+      background-position: center 20%;
+
+      @include retina {
+        background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-2@2x.webp");
+        background-size: cover;
+        background-position: center 20%;
+      }
+    }
+  }
+
+  &--coach-3 {
+    background-image: url("../img/coaches-desktop-3.webp");
+    background-position: center 20%;
+
+    @include retina {
+      background-image: url("../img/coaches-desktop-3@2x.webp");
+      background-size: cover;
+      background-position: center 20%;
+    }
+
+    &:hover {
+      background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-3.webp");
+      background-position: center 20%;
+
+      @include retina {
+        background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-3@2x.webp");
+        background-size: cover;
+        background-position: center 20%;
+      }
+    }
+  }
+
+  &--coach-4 {
+    background-image: url("../img/coaches-desktop-4.webp");
+    background-position: center 20%;
+
+    @include retina {
+      background-image: url("../img/coaches-desktop-4@2x.webp");
+      background-size: cover;
+      background-position: center 20%;
+    }
+
+    &:hover {
+      background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-4.webp");
+      background-position: center 20%;
+
+      @include retina {
+        background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-4@2x.webp");
+        background-size: cover;
+        background-position: center 20%;
+      }
+    }
+  }
+
+  &:hover {
+    .coaches__swiper-features {
+      display: block;
+    }
+
+    p,
+    span {
+      display: block;
+    }
+
+    h3 {
+      display: none;
+    }
+  }
+}
+
+.coaches__swiper-slide h3 {
+  position: absolute;
+  width: 160px;
+  left: 50%;
+  margin: 0;
+  transform: translateX(-50%);
+  bottom: 23px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+
+  @include vp-1023 {
+    left: 51%;
+    bottom: 22px;
+  }
+}
+
+.coaches__swiper-slide p {
+  display: none;
+  margin: 0;
+  margin-bottom: -2px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+
+  @include vp-1023 {
+    margin-left: -9px;
+    margin-bottom: -4px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    margin-bottom: -3px;
+  }
+}
+
+.coaches__swiper-slide span {
+  display: none;
+  margin-bottom: 32px;
+  color: $color-spindle;
+  text-align: center;
+
+  @include vp-1023 {
+    margin-left: -9px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    margin-bottom: 33px;
+  }
+}
+
+.coaches__swiper-features {
+  display: none;
+  margin: 0;
+  padding-left: 71px;
+  padding-right: 5px;
+  list-style: none;
+
+  @include vp-1023 {
+    padding-right: 10px;
+  }
+
+  @include vp-767 {
+    padding-left: 50px;
+  }
+}
+
+.coaches__swiper-feature {
+  position: relative;
+  margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 150%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -16px;
+    width: 6px;
+    height: 6px;
+    background-color: $color-default-white;
+    border-radius: 50%;
+  }
+}
+
+.coaches__button {
+  display: block;
+  position: absolute;
+  top: 243px;
+  width: 18px;
+  height: 34px;
+  border: none;
+  background-size: cover;
+  background-color: $color-transparent;
+  transition: opacity $trans-default;
+  cursor: pointer;
+
+  @include vp-1023 {
+    top: 211px;
+  }
+
+  &--prev {
+    left: 3px;
+    background-image: url("../img/svg/arrow-prev-desktop.svg");
+
+    @include vp-1023 {
+      left: -1px;
+    }
+
+    @include vp-767 {
+      width: 12px;
+      height: 21px;
+      top: 207px;
+      left: 14px;
+      background-image: url("../img/svg/arrow-prev-mobile.svg");
+    }
+  }
+
+  &--next {
+    right: 3px;
+    background-image: url("../img/svg/arrow-next-desktop.svg");
+
+    @include vp-1023 {
+      right: -1px;
+    }
+
+    @include vp-767 {
+      width: 12px;
+      height: 21px;
+      top: 207px;
+      right: 14px;
+      background-image: url("../img/svg/arrow-next-mobile.svg");
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &--nojs {
+    display: none;
+  }
+}
+
