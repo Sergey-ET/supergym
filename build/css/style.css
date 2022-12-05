@@ -3118,8 +3118,12 @@ button,
     height: auto;
   }
 
+  .promo__description-wrapper {
+    margin-bottom: 5px;
+  }
+
   .coaches {
-    padding-top: 45px;
+    padding-top: 44px;
     padding-bottom: 70px;
   }
 
