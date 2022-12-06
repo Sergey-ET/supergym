@@ -4,6 +4,7 @@ import {scrollToElement} from './modules/scroll';
 import {playVideo} from './modules/play-video.js';
 import {toggleTab} from './modules/toggle-tab.js';
 import {getSlider} from './modules/get-slider.js';
+import {getCarousel} from './modules/get-carousel.js';
 
 // ---------------------------------
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     playVideo();
     toggleTab();
     getSlider();
+    getCarousel();
   });
 });
 

@@ -9,7 +9,7 @@ const getSlider = () => {
     coachesButton.classList.remove('coaches__button--nojs');
   });
 
-  const swiper = new Swiper('.swiper', {
+  const coachesSlider = new Swiper('.coaches__swiper', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 4,

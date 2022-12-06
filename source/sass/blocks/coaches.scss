@@ -306,6 +306,12 @@
     top: 211px;
   }
 
+  @include vp-767 {
+    width: 12px;
+    height: 21px;
+    top: 207px;
+  }
+
   &--prev {
     left: 3px;
     background-image: url("../img/svg/arrow-prev-desktop.svg");
@@ -315,9 +321,6 @@
     }
 
     @include vp-767 {
-      width: 12px;
-      height: 21px;
-      top: 207px;
       left: 14px;
       background-image: url("../img/svg/arrow-prev-mobile.svg");
     }
@@ -332,9 +335,6 @@
     }
 
     @include vp-767 {
-      width: 12px;
-      height: 21px;
-      top: 207px;
       right: 14px;
       background-image: url("../img/svg/arrow-next-mobile.svg");
     }
