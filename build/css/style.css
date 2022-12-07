@@ -3131,12 +3131,124 @@ button,
 .contacts__information-link {
   font-size: 14px;
   line-height: 21px;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .contacts__information-link:hover,
 .contacts__information-linkfocus {
   opacity: 0.7;
   text-decoration: underline;
+}
+
+.page-footer {
+  padding-top: 41px;
+  padding-bottom: 42px;
+  background-color: #030a1a;
+}
+
+.page-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.page-footer__logo-link {
+  margin-top: 10px;
+}
+
+.page-footer__logo-icon--tablet,
+.page-footer__logo-icon--mobile {
+  display: none;
+}
+
+.page-footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 68.5%;
+}
+
+.page-footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 431px;
+  margin-top: -7px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-footer__item {
+  margin-right: 40px;
+}
+
+.page-footer__item:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.page-footer__item-link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.page-footer__item-link:hover,
+.page-footer__item-link:focus {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.page-footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 97px;
+  margin-top: -2px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-footer__socials-item {
+  margin-right: 11px;
+}
+
+.page-footer__socials-item:last-child {
+  margin-right: 0;
+}
+
+.page-footer__socials-icon {
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.page-footer__socials-icon:hover,
+.page-footer__socials-icon:focus {
+  opacity: 0.7;
 }
 
 /* @mixin hover-focus {
@@ -3726,6 +3838,41 @@ button,
     font-size: 18px;
     line-height: 152.34%;
   }
+
+  .page-footer {
+    padding-top: 45px;
+    padding-bottom: 37px;
+  }
+
+  .page-footer__logo-link {
+    margin-top: 3px;
+  }
+
+  .page-footer__logo-icon--tablet {
+    display: block;
+  }
+
+  .page-footer__logo-icon--desktop {
+    display: none;
+  }
+
+  .page-footer__nav {
+    width: 78.7%;
+  }
+
+  .page-footer__list {
+    max-width: 391px;
+    margin-top: -5px;
+  }
+
+  .page-footer__item {
+    margin-right: 30px;
+  }
+
+  .page-footer__socials {
+    margin-top: 0;
+    margin-right: -6px;
+  }
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
@@ -4305,7 +4452,7 @@ button,
   }
 
   .contacts__information-container {
-    padding: 64px 15px 64px;
+    padding: 64px 15px 62px;
   }
 
   .contacts__information h2 {
@@ -4336,6 +4483,61 @@ button,
 
   .contacts__information-item {
     border-right: none;
+  }
+
+  .page-footer {
+    padding-top: 46px;
+    padding-bottom: 45px;
+  }
+
+  .page-footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .page-footer__logo-link {
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 21px;
+  }
+
+  .page-footer__logo-icon--mobile {
+    display: block;
+  }
+
+  .page-footer__logo-icon--tablet {
+    display: none;
+  }
+
+  .page-footer__nav {
+    display: inline;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+    width: auto;
+    margin-bottom: 25px;
+  }
+
+  .page-footer__list {
+    display: inline;
+  }
+
+  .page-footer__item {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .page-footer__item-link {
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 
