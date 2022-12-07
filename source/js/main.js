@@ -5,6 +5,7 @@ import {playVideo} from './modules/play-video.js';
 import {toggleTab} from './modules/toggle-tab.js';
 import {getSlider} from './modules/get-slider.js';
 import {getCarousel} from './modules/get-carousel.js';
+import {validatePhone} from './modules/validate-phone.js';
 
 // ---------------------------------
 
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     toggleTab();
     getSlider();
     getCarousel();
+    validatePhone();
   });
 });
 

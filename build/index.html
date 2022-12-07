@@ -464,6 +464,45 @@
             <button class="feedbacks__button feedbacks__button--next feedbacks__button--nojs"></button>
           </div>
         </section>
+        <section class="contacts">
+          <div class="contacts__form">
+            <div class="container contacts__form-container">
+              <h3>Бесплатное занятие</h3>
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <div class="contacts__form-wrapper">
+                  <label for="name" class="visually-hidden">Укажите своё имя</label>
+                  <input type="text" name="name" id="name" minlength="1" placeholder="Имя" title="Введите своё имя" required>
+                  <label for="phone" class="visually-hidden">Укажите свой телефон</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" minlength="17" title="Введите свой телефон в формате +7 (ХХХ) ХХХ ХХХХ" required>
+                </div>
+                <button class="btn contacts__form-button" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+          <div class="contacts__information">
+            <div class="container contacts__information-container">
+              <h2>Контакты</h2>
+              <ul class="contacts__information-list">
+                <li class="contacts__information-item contacts__information-item--address">
+                  <h3>Адрес:</h3>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+                </li>
+                <li class="contacts__information-item contacts__information-item--phone">
+                  <h3>Телефон:</h3>
+                  <a href="tel:88005555555" class="contacts__information-link contacts__information-link--phone">8-800-555-55-55</a>
+                </li>
+                <li class="contacts__information-item contacts__information-item--schedule">
+                  <h3>График работы:</h3>
+                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                </li>
+                <li class="contacts__information-item contacts__information-item--email">
+                  <h3>Email:</h3>
+                  <a href="mailto:omsk@supergym.ru" class="contacts__information-link contacts__information-link--email">omsk@supergym.ru</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
         <div class="container"></div>
