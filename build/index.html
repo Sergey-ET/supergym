@@ -28,7 +28,17 @@
     <div class="wrapper">
       <header class="page-header">
         <div class="container page-header__container">
-          <a class="page-header__logo">Supergym</a>
+          <a class="page-header__logo">
+            <svg class="page-header__logo-icon page-header__logo-icon--desktop" width="119" height="23" role="img" aria-label="Логотип компании.">
+              <use xlink:href="./img/sprite.svg#logo-header-desktop"></use>
+            </svg>
+            <svg class="page-header__logo-icon page-header__logo-icon--tablet" width="81" height="16" role="img" aria-label="Логотип компании.">
+              <use xlink:href="./img/sprite.svg#logo-tablet"></use>
+            </svg>
+            <svg class="page-header__logo-icon page-header__logo-icon--mobile" width="67" height="13" role="img" aria-label="Логотип компании.">
+              <use xlink:href="./img/sprite.svg#logo-header-mobile"></use>
+            </svg>
+          </a>
           <a href="tel:88005555555" class="page-header__phone">8-800-555-55-55</a>
         </div>
       </header>
@@ -61,13 +71,15 @@
               <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех&nbsp;спортсменов.</p>
               <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
             </div>
-            <picture>
-              <source media="(min-width: 1024px)"
-                      srcset="./img/gym-desktop.webp 1x, ./img/gym-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="./img/gym-mobile.webp 1x, ./img/gym-mobile@2x.webp 2x">
-              <img class="gym__image" src="./img/gym-desktop.jpg" alt="Тренажёрный зал с белыми стенами и большим количеством разнообразных тренажёров." width="660" height="401"  srcset="./img/gym-desktop@2x.jpg 2x">
-            </picture>
+            <div class="gym__image-inner">
+              <picture>
+                <source media="(min-width: 1024px)"
+                        srcset="./img/gym-desktop.webp 1x, ./img/gym-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/gym-mobile.webp 1x, ./img/gym-mobile@2x.webp 2x">
+                <img class="gym__image" src="./img/gym-desktop.jpg" alt="Тренажёрный зал с белыми стенами и большим количеством разнообразных тренажёров." width="660" height="401"  srcset="./img/gym-desktop@2x.jpg 2x">
+              </picture>
+            </div>
             <div class="gym__video" id="player">
               <picture>
                 <source media="(min-width: 1024px)"

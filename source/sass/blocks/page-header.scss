@@ -23,24 +23,39 @@
 }
 
 .page-header__logo {
-  font-family: $ff-alumni;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: $color-default-white;
+  margin-top: 6px;
+  margin-left: 1px;
 
   @include vp-1023 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+.page-header__logo-icon {
+  &--tablet,
+  &--mobile {
+    display: none;
+  }
+
+  @include vp-1023 {
+    &--tablet {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
   }
 
   @include vp-767 {
-    font-size: 20px;
-    line-height: 24px;
+    &--mobile {
+      display: block;
+    }
+
+    &--tablet {
+      display: none;
+    }
   }
 }
 

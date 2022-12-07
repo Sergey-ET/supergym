@@ -30,7 +30,8 @@
 }
 
 .gym__wrapper {
-  width: 355px;
+  width: 33%;
+  //width: 355px;
 
   @include vp-1023 {
     width: auto;
@@ -116,9 +117,17 @@
   }
 }
 
+.gym__image-inner {
+  width: 60%;
+
+  @include vp-1023 {
+    width: 100%;
+  }
+}
+
 .gym__image {
   display: block;
-  max-width: 660px;
+  width: 660px;
   height: auto;
 
   @include vp-1023 {

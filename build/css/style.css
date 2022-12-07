@@ -1688,14 +1688,13 @@ button,
 }
 
 .page-header__logo {
-  font-family: "Alumni Sans", "Arial Narrow", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #ffffff;
+  margin-top: 6px;
+  margin-left: 1px;
+}
+
+.page-header__logo-icon--tablet,
+.page-header__logo-icon--mobile {
+  display: none;
 }
 
 .page-header__phone {
@@ -1842,7 +1841,7 @@ button,
 }
 
 .gym__wrapper {
-  width: 355px;
+  width: 33%;
 }
 
 .gym h2 {
@@ -1873,9 +1872,13 @@ button,
   margin-bottom: 10px;
 }
 
+.gym__image-inner {
+  width: 60%;
+}
+
 .gym__image {
   display: block;
-  max-width: 660px;
+  width: 660px;
   height: auto;
 }
 
@@ -3303,9 +3306,16 @@ button,
   }
 
   .page-header__logo {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .page-header__logo-icon--tablet {
+    display: block;
+  }
+
+  .page-header__logo-icon--desktop {
+    display: none;
   }
 
   .page-header__phone {
@@ -3422,6 +3432,10 @@ button,
 
   .gym p:not(:first-of-type) {
     display: none;
+  }
+
+  .gym__image-inner {
+    width: 100%;
   }
 
   .gym__image {
@@ -3904,9 +3918,12 @@ button,
     padding-bottom: 15px;
   }
 
-  .page-header__logo {
-    font-size: 20px;
-    line-height: 24px;
+  .page-header__logo-icon--mobile {
+    display: block;
+  }
+
+  .page-header__logo-icon--tablet {
+    display: none;
   }
 
   .page-header__phone {
