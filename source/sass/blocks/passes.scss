@@ -4,7 +4,7 @@
   padding-bottom: 120px;
   background-color: $color-ghost-white;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding-top: 101px;
     padding-bottom: 100px;
   }
@@ -20,7 +20,7 @@
   bottom: -149px;
   right: 0;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 347px;
     height: 444px;
     bottom: -125px;
@@ -47,7 +47,7 @@
   letter-spacing: 0.03em;
   text-align: center;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-right: 14px;
     margin-bottom: 20px;
     font-size: 42px;
@@ -91,7 +91,7 @@
     display: none;
   }
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-bottom: 44px;
   }
 
@@ -111,7 +111,7 @@
     margin-right: 0;
   }
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-right: 54px;
   }
 
@@ -136,7 +136,7 @@
     color: $color-sapphire;
   }
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 18px;
   }
 
@@ -192,7 +192,7 @@
   padding: 0;
   list-style: none;
 
-  @include vp-1023 {
+  @include vp-1199 {
     grid-template-columns: 442px;
   }
 
@@ -240,7 +240,7 @@
     }
   }
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding: 63px 118px 67px;
   }
 

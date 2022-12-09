@@ -5,7 +5,7 @@
   padding-top: 120px;
   padding-bottom: 235px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding-top: 100px;
     padding-bottom: 16px;
   }
@@ -22,7 +22,7 @@
   padding-left: 90px;
   column-gap: 10px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     flex-direction: column;
     align-items: center;
     column-gap: 0;
@@ -32,7 +32,7 @@
 .gym__wrapper {
   width: 33%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: auto;
   }
 }
@@ -48,7 +48,7 @@
   letter-spacing: 0.03em;
   color: $color-sapphire;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-top: 0;
     margin-right: 15px;
     margin-bottom: 0;
@@ -72,7 +72,7 @@
   font-size: 18px;
   line-height: 150%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     text-align: center;
     margin-bottom: 34px;
   }
@@ -91,7 +91,7 @@
     margin-bottom: 10px;
   }
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding-left: 87px;
     padding-right: 87px;
     text-align: center;
@@ -119,7 +119,7 @@
 .gym__image-inner {
   width: 60%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 100%;
   }
 
@@ -133,7 +133,7 @@
   width: 660px;
   height: auto;
 
-  @include vp-1023 {
+  @include vp-1199 {
     max-width: 100%;
     width: 100%;
     height: auto;
@@ -166,7 +166,7 @@
     z-index: 2;
   }
 
-  @include vp-1023 {
+  @include vp-1199 {
     position: relative;
     width: 266px;
     height: 167px;
@@ -188,6 +188,7 @@
   &:focus {
     .gym__video-play {
       transform: translate(-50%, -50%) scale(1.1);
+      outline: 2px solid $color-default-white;
     }
   }
 }
@@ -203,7 +204,7 @@
   cursor: pointer;
   z-index: 3;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 73px;
     height: 73px;
   }

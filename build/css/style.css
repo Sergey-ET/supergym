@@ -1932,6 +1932,7 @@ button,
   -webkit-transform: translate(-50%, -50%) scale(1.1);
   -ms-transform: translate(-50%, -50%) scale(1.1);
   transform: translate(-50%, -50%) scale(1.1);
+  outline: 2px solid #ffffff;
 }
 
 .gym__video-play {
@@ -3375,7 +3376,7 @@ button,
   }
 */
 
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
   .container {
     padding: 0 45px;
   }

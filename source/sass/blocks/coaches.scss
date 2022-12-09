@@ -3,7 +3,7 @@
   padding-bottom: 91px;
   height: 100%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding-top: 67px;
     padding-bottom: 100px;
   }
@@ -20,7 +20,7 @@
   margin: 0 auto;
   padding: 0 60px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     max-width: 678px;
     padding: 0 56px;
   }
@@ -45,7 +45,7 @@
     flex-wrap: wrap;
     width: 100%;
 
-    @include vp-1023 {
+    @include vp-1199 {
       justify-content: center;
     }
   }
@@ -62,7 +62,7 @@
   line-height: 65px;
   letter-spacing: 0.03em;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-left: -6px;
     margin-bottom: 30px;
     font-size: 42px;
@@ -89,7 +89,7 @@
   background-repeat: no-repeat;
   background-position: center 20%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 268px;
     padding: 53px 20px 51px;
   }
@@ -192,7 +192,7 @@
   line-height: 150%;
   text-align: center;
 
-  @include vp-1023 {
+  @include vp-1199 {
     left: 51%;
     bottom: 22px;
   }
@@ -207,7 +207,7 @@
   line-height: 150%;
   text-align: center;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-left: -9px;
     margin-bottom: -4px;
   }
@@ -224,7 +224,7 @@
   color: $color-spindle;
   text-align: center;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-left: -9px;
   }
 
@@ -279,7 +279,7 @@
   transition: opacity $trans-default;
   cursor: pointer;
 
-  @include vp-1023 {
+  @include vp-1199 {
     top: 211px;
   }
 
@@ -293,7 +293,7 @@
     left: 3px;
     background-image: url("../img/svg/arrow-prev-desktop.svg");
 
-    @include vp-1023 {
+    @include vp-1199 {
       left: -1px;
     }
 
@@ -307,7 +307,7 @@
     right: 3px;
     background-image: url("../img/svg/arrow-next-desktop.svg");
 
-    @include vp-1023 {
+    @include vp-1199 {
       right: -1px;
     }
 

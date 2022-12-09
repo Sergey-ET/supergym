@@ -3,7 +3,7 @@
   padding-bottom: 51px;
   background: $angular-desktop;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding-top: 34px;
     padding-bottom: 82px;
     background: $angular-tablet;
@@ -21,7 +21,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @include vp-1023 {
+  @include vp-1199 {
     justify-content: center;
   }
 
@@ -31,7 +31,7 @@
 }
 
 .major__text {
-  @include vp-1023 {
+  @include vp-1199 {
     margin-right: 28px;
   }
 
@@ -45,7 +45,7 @@
   display: flex;
   margin-bottom: 50px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-bottom: 37px;
   }
 
@@ -62,7 +62,7 @@
   width: 113px;
   list-style: none;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-top: 186px;
     margin-right: 18px;
   }
@@ -86,7 +86,7 @@
   margin-top: 113px;
   margin-left: -35px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-top: 52px;
     margin-left: 0;
   }
@@ -110,7 +110,7 @@
   text-align: center;
   color: $color-default-white;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 187px;
     margin-bottom: 5px;
     padding-left: 0;
@@ -142,7 +142,7 @@
   text-align: right;
   color: $color-default-white;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 195px;
     margin-left: 0;
     font-size: 72px;
@@ -169,7 +169,7 @@
   text-align: center;
   color: $color-default-white;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 187px;
   }
 
@@ -195,7 +195,7 @@
   width: 500px;
   height: 556px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-right: 0;
     margin-left: 0;
     width: 324px;
@@ -212,7 +212,7 @@
   margin-top: -19px;
   padding-left: 19px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     justify-content: center;
     margin-top: 0;
     padding-left: 0;
@@ -227,7 +227,7 @@
   gap: 20px;
   z-index: 1;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-bottom: 19px;
   }
 
@@ -241,7 +241,7 @@
   margin-left: 1px;
   margin-right: auto;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-top: 7px;
     margin-left: 0;
   }
@@ -253,7 +253,7 @@
     display: none;
   }
 
-  @include vp-1023 {
+  @include vp-1199 {
     &--tablet {
       display: block;
     }
@@ -290,7 +290,7 @@
     opacity: 0.7;
   }
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;

@@ -2,7 +2,7 @@
   padding-top: 120px;
   padding-bottom: 58px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding-top: 100px;
     padding-bottom: 34px;
   }
@@ -28,7 +28,7 @@
   color: $color-default-white;
   background-color: $color-torch-red;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding: 44px 45px 49px;
     width: 292px;
   }
@@ -43,7 +43,7 @@
   height: auto;
   background-color: $color-sapphire-opacity-05;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 386px;
     height: 292px;
   }
@@ -65,7 +65,7 @@
   justify-content: space-between;
   margin-bottom: 18px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-bottom: 4px;
   }
 
@@ -86,7 +86,7 @@
   text-transform: uppercase;
   color: $color-default-white;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 117px;
     margin: 7px 0 0 7px;
     font-size: 48px;
@@ -100,7 +100,7 @@
     width: 64px;
     margin-bottom: 18px;
 
-    @include vp-1023 {
+    @include vp-1199 {
       width: 42px;
       margin-bottom: 1px;
     }
@@ -109,7 +109,7 @@
   &--time {
     width: 88px;
 
-    @include vp-1023 {
+    @include vp-1199 {
       width: 56px;
     }
   }
@@ -117,7 +117,7 @@
   th {
     padding-bottom: 6px;
 
-    @include vp-1023 {
+    @include vp-1199 {
       padding-top: 2px;
       padding-bottom: 0;
     }
@@ -130,7 +130,7 @@
   font-size: 14px;
   line-height: 150%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding-top: 1px;
     padding-left: 3px;
     font-size: 10px;
@@ -144,7 +144,7 @@
   margin-top: -4px;
   line-height: 150%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding-left: 3px;
     margin-top: -5px;
     font-size: 10px;
@@ -157,7 +157,7 @@
   text-align: left;
   border-bottom: 1px solid $color-default-white;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 12px;
     line-height: 170%;
   }
@@ -168,7 +168,7 @@
   font-size: 40px;
   line-height: 108%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 24px;
   }
 }
@@ -179,7 +179,7 @@
   font-size: 18px;
   line-height: 150%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-bottom: 30px;
     font-size: 12px;
   }
@@ -196,7 +196,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 10px;
     line-height: 12px;
     padding: 13px 15px;

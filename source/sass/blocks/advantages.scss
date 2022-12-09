@@ -3,7 +3,7 @@
   padding-bottom: 87px;
   background-color: $color-ghost-white;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding-top: 93px;
     padding-bottom: 94px;
   }
@@ -37,7 +37,7 @@
   letter-spacing: 0.03em;
   text-align: center;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-left: -22px;
     font-size: 42px;
     line-height: 50px;
@@ -62,7 +62,7 @@
   padding: 0;
   list-style: none;
 
-  @include vp-1023 {
+  @include vp-1199 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content 1fr min-content;
     column-gap: 30px;
@@ -83,7 +83,7 @@
   column-gap: 30px;
   min-height: 153px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     min-height: auto;
   }
 
@@ -106,7 +106,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    @include vp-1023 {
+    @include vp-1199 {
       font-size: 58px;
     }
 
@@ -122,7 +122,7 @@
     line-height: 150%;
     color: $color-persian-blue;
 
-    @include vp-1023 {
+    @include vp-1199 {
       margin-top: -18px;
     }
 
@@ -139,7 +139,7 @@
     font-size: 22px;
     line-height: 150%;
 
-    @include vp-1023 {
+    @include vp-1199 {
       margin-top: -13px;
       margin-bottom: 2px;
       font-size: 20px;
@@ -170,7 +170,7 @@
     margin-top: 5px;
     padding-top: 20px;
 
-    @include vp-1023 {
+    @include vp-1199 {
       margin-top: 11px;
       padding-top: 0;
     }
@@ -180,7 +180,7 @@
   &--comfort {
     padding-left: 15px;
 
-    @include vp-1023 {
+    @include vp-1199 {
       padding-left: 0;
     }
   }
@@ -196,7 +196,7 @@
     padding-bottom: 20px;
     border-bottom: 2px solid $color-crimson-opacity-02;
 
-    @include vp-1023 {
+    @include vp-1199 {
       padding-bottom: 0;
       border-bottom: none;
     }
@@ -221,7 +221,7 @@
       text-align: center;
     }
 
-    @include vp-1023 {
+    @include vp-1199 {
       grid-column: 1 / -1;
       grid-row: 2 / 3;
       max-width: 442px;
@@ -247,7 +247,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 
-      @include vp-1023 {
+      @include vp-1199 {
         max-width: 320px;
         font-size: 74px;
       }
@@ -267,7 +267,7 @@
       font-size: 26px;
       line-height: 150%;
 
-      @include vp-1023 {
+      @include vp-1199 {
         margin-top: -19px;
         margin-bottom: 14px;
         font-size: 22px;
