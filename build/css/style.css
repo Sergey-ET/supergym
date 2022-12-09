@@ -1927,7 +1927,12 @@ button,
   z-index: 2;
 }
 
-.gym__link:hover .gym__video-play,
+.gym__link:hover .gym__video-play {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+  -ms-transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
 .gym__link:focus .gym__video-play {
   -webkit-transform: translate(-50%, -50%) scale(1.1);
   -ms-transform: translate(-50%, -50%) scale(1.1);

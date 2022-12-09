@@ -184,7 +184,12 @@
 }
 
 .gym__link {
-  &:hover,
+  &:hover {
+    .gym__video-play {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+
   &:focus {
     .gym__video-play {
       transform: translate(-50%, -50%) scale(1.1);
