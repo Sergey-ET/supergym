@@ -7,7 +7,7 @@ const playVideo = () => {
   });
   playButton.addEventListener('click', function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-      height: '228',
+      height: '100%',
       width: '100%',
       videoId: '9TZXsZItgdw',
       events: {

@@ -1,4 +1,5 @@
 .gym {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 120px;
@@ -6,17 +7,16 @@
 
   @include vp-1023 {
     padding-top: 100px;
-    padding-bottom: 183px;
+    padding-bottom: 16px;
   }
 
   @include vp-767 {
     padding-top: 64px;
-    padding-bottom: 277px;
+    padding-bottom: 70px;
   }
 }
 
 .gym__container {
-  position: relative;
   display: flex;
   justify-content: space-between;
   padding-left: 90px;
@@ -31,7 +31,6 @@
 
 .gym__wrapper {
   width: 33%;
-  //width: 355px;
 
   @include vp-1023 {
     width: auto;
@@ -123,6 +122,10 @@
   @include vp-1023 {
     width: 100%;
   }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .gym__image {
@@ -135,16 +138,19 @@
     width: 100%;
     height: auto;
   }
+}
 
-  @include vp-767 {
-    display: none;
-  }
+.gym__video-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 50%;
 }
 
 .gym__video {
   position: absolute;
-  top: 71.7%;
-  left: 38.3%;
+  top: 408px;
+  left: 39.5%;
   width: 364px;
   height: 228px;
   z-index: 1;
@@ -161,33 +167,28 @@
   }
 
   @include vp-1023 {
+    position: relative;
     width: 266px;
     height: 167px;
-    top: 85.3%;
+    top: -84px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   @include vp-767 {
     position: relative;
-    top: 386px;
-    left: 56%;
-    height: 167px;
-    width: 111%;
-    background-image: url("../img/video-mobile.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 70%;
-
-    @include retina {
-      background-image: url("../img/video-mobile@2x.webp");
-    }
+    width: 100%;
+    height: auto;
+    top: 0;
   }
 }
 
-.gym__video-image {
-  @include vp-767 {
-    display: none;
+.gym__link {
+  &:hover,
+  &:focus {
+    .gym__video-play {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
   }
 }
 
@@ -202,11 +203,6 @@
   cursor: pointer;
   z-index: 3;
 
-  &:hover,
-  &:focus {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-
   @include vp-1023 {
     width: 73px;
     height: 73px;
@@ -217,19 +213,8 @@
   display: none;
 
   @include vp-767 {
-    display: flex;
-    position: relative;
-    margin-top: -134px;
-    width: 100%;
-    height: 313px;
-    background-image: url("../img/gym-mobile.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 50%;
-    order: 1;
-
-    @include retina {
-      background-image: url("../img/gym-mobile@2x.webp");
-    }
+    display: block;
+    margin-top: 33px;
+    margin-bottom: 40px;
   }
 }

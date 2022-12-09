@@ -4,40 +4,37 @@
   padding-bottom: 120px;
   background-color: $color-ghost-white;
 
-  &::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -95px;
-    width: 287px;
-    height: 384px;
-    background-image: url("../img/passes-desktop@2x.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
-  }
-
   @include vp-1023 {
     padding-top: 101px;
     padding-bottom: 100px;
-
-    &::before {
-      bottom: -90px;
-      width: 345px;
-      height: 375px;
-      background-image: url("../img/passes-tablet@2x.webp");
-    }
   }
 
   @include vp-767 {
     padding-top: 64px;
-    padding-bottom: 70px;
-
-    &::before {
-      background-image: none;
-    }
+    padding-bottom: 69px;
   }
+}
+
+.passes__container-inner {
+  position: absolute;
+  bottom: -149px;
+  right: 0;
+
+  @include vp-1023 {
+    width: 347px;
+    height: 444px;
+    bottom: -125px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.passes__container-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .passes h2 {
@@ -66,13 +63,29 @@
 }
 
 .passes__tabs {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
   width: fit-content;
   margin: 0 auto 38px;
-  padding: 0 0 11px;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 0;
   list-style: none;
-  border-bottom: 2px solid $color-grey-opacity-02;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $color-grey-opacity-02;
+
+    @include vp-767 {
+      bottom: 12px;
+    }
+  }
 
   &--nojs {
     display: none;
@@ -86,11 +99,12 @@
     width: auto;
     padding-bottom: 12px;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 22px;
   }
 }
 
 .passes__tab {
+  max-width: 100px;
   margin-right: 46px;
 
   &:last-child {
@@ -107,11 +121,15 @@
 }
 
 .passes__tab-link {
-  padding-bottom: 14px;
+  padding: 0 0 11px;
   font-size: 20px;
   line-height: 150%;
   color: $color-sapphire-opacity-05;
-  transition: $trans-default;
+  border: none;
+  border-bottom: 2px solid $color-transparent;
+  background-color: $color-transparent;
+  cursor: pointer;
+  user-select: none;
 
   &:hover,
   &:focus {
@@ -123,19 +141,19 @@
   }
 
   @include vp-767 {
-    padding-bottom: 15px;
+    padding-bottom: 12px;
     font-size: 16px;
   }
 }
 
 .passes__tab-link.is-active {
-  padding-bottom: 14px;
   color: $color-sapphire;
   border-bottom: 2px solid $color-crimson;
   cursor: default;
+  user-select: none;
 
   @include vp-767 {
-    padding-bottom: 15px;
+    padding-bottom: 12px;
   }
 }
 
@@ -201,8 +219,7 @@
     margin-left: 0;
     border-style: solid;
     border-width: 7px;
-    border-image: $to-right-bottom;
-    border-image-slice: 1;
+    border-image: $to-right-bottom 1;
     opacity: 0;
     z-index: -1;
     transition: opacity $trans-default;
@@ -219,8 +236,7 @@
       background: $red-to-blue-to-97;
       border-style: solid;
       border-width: 2px;
-      border-image: $red-to-blue-to-97;
-      border-image-slice: 1;
+      border-image: $red-to-blue-to-97 1;
     }
   }
 
@@ -263,7 +279,9 @@
 .passes__content-price {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 33px;
+
 
   @include vp-767 {
     margin-bottom: 28px;
@@ -271,16 +289,18 @@
 }
 
 .passes__content-price span {
+  position: relative;
   margin-bottom: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 150%;
+  white-space: normal;
   color: $color-egyptian-blue;
 
   &:last-child {
     margin-left: 13px;
     margin-bottom: 0;
-    margin-top: -1px;
+    margin-top: -49px;
     height: 44px;
     width: 30px;
     font-weight: 500;
@@ -290,14 +310,19 @@
   &::before {
     content: attr(data-price);
     position: absolute;
-    top: 37.5%;
-    left: 50%;
-    transform: translateX(-50%);
+    display: block;
+    top: -24px;
+    left: -19px;
     font-weight: 700;
     font-size: 100px;
     color: $color-whisper;
     opacity: .48;
     z-index: -1;
+
+    @include vp-767 {
+      top: -19px;
+      left: -16px;
+    }
   }
 
   @include vp-767 {
@@ -333,7 +358,6 @@
     background: $red-to-blue-to-97;
     border-style: solid;
     border-width: 2px;
-    border-image: $red-to-blue-to-97;
-    border-image-slice: 1;
+    border-image: $red-to-blue-to-97 1;
   }
 }

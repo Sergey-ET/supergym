@@ -87,6 +87,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  row-gap: 15px;
   max-width: 431px;
   margin-top: -7px;
   margin-bottom: 0;
@@ -143,7 +144,8 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 97px;
+  row-gap: 10px;
+  max-width: 108px;
   margin-top: -2px;
   margin-bottom: 0;
   padding: 0;

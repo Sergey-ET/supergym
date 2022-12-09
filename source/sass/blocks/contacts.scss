@@ -94,6 +94,11 @@
     margin-left: 0;
   }
 
+  &:hover,
+  &:focus {
+    outline: 1px solid $color-default-white;
+  }
+
   @include vp-1023 {
     width: 206px;
     padding-bottom: 5px;

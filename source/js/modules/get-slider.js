@@ -13,26 +13,19 @@ const getSlider = () => {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 4,
-    slidesPerGroup: 4,
     spaceBetween: 40,
     speed: 1000,
     breakpoints: {
-      // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        slidesPerGroup: 1,
         spaceBetween: 20,
       },
-      // when window width is >= 768px
       768: {
         slidesPerView: 2,
-        slidesPerGroup: 2,
         spaceBetween: 30,
       },
-      // when window width is >= 1024px
       1024: {
         slidesPerView: 4,
-        slidesPerGroup: 4,
         spaceBetween: 40,
       },
     },

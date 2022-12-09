@@ -45,7 +45,7 @@
     flex-wrap: wrap;
     width: 100%;
 
-    @include vp-767 {
+    @include vp-1023 {
       justify-content: center;
     }
   }
@@ -81,103 +81,85 @@
   position: relative;
   width: 260px;
   height: 294px;
-  padding: 51px 0 52px;
+  padding: 51px 20px 52px;
   color: $color-default-white;
   overflow-y: scroll;
+  background-color: $color-sapphire-opacity-089;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 20%;
 
   @include vp-1023 {
-    padding: 53px 0 51px;
+    width: 268px;
+    padding: 53px 20px 51px;
   }
 
   @include vp-767 {
+    width: 100%;
     height: 274px;
-    padding: 41px 0 40px;
+    padding: 41px 10px 40px;
   }
 
   &--coach-1 {
     background-image: url("../img/coaches-desktop-1.webp");
-    background-position: center 20%;
 
     @include retina {
-      background-image: url("../img/coaches-desktop-1@2x.webp") center;
-      background-size: cover;
-      background-position: center 20%;
+      background-image: url("../img/coaches-desktop-1@2x.webp");
     }
 
     &:hover {
       background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-1.webp");
-      background-position: center 20%;
 
       @include retina {
         background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-1@2x.webp");
-        background-size: cover;
-        background-position: center 20%;
       }
     }
   }
 
   &--coach-2 {
     background-image: url("../img/coaches-desktop-2.webp");
-    background-position: center 20%;
 
     @include retina {
       background-image: url("../img/coaches-desktop-2@2x.webp");
-      background-size: cover;
-      background-position: center 20%;
     }
 
     &:hover {
       background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-2.webp");
-      background-position: center 20%;
 
       @include retina {
         background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-2@2x.webp");
-        background-size: cover;
-        background-position: center 20%;
       }
     }
   }
 
   &--coach-3 {
     background-image: url("../img/coaches-desktop-3.webp");
-    background-position: center 20%;
 
     @include retina {
       background-image: url("../img/coaches-desktop-3@2x.webp");
-      background-size: cover;
-      background-position: center 20%;
     }
 
     &:hover {
       background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-3.webp");
-      background-position: center 20%;
 
       @include retina {
         background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-3@2x.webp");
-        background-size: cover;
-        background-position: center 20%;
       }
     }
   }
 
   &--coach-4 {
     background-image: url("../img/coaches-desktop-4.webp");
-    background-position: center 20%;
 
     @include retina {
       background-image: url("../img/coaches-desktop-4@2x.webp");
-      background-size: cover;
-      background-position: center 20%;
     }
 
     &:hover {
       background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-4.webp");
-      background-position: center 20%;
 
       @include retina {
         background-image: linear-gradient($color-sapphire-opacity-089), url("../img/coaches-desktop-4@2x.webp");
-        background-size: cover;
-        background-position: center 20%;
       }
     }
   }
@@ -255,16 +237,11 @@
 .coaches__swiper-features {
   display: none;
   margin: 0;
-  padding-left: 71px;
-  padding-right: 5px;
+  padding-left: 51px;
   list-style: none;
 
-  @include vp-1023 {
-    padding-right: 10px;
-  }
-
   @include vp-767 {
-    padding-left: 50px;
+    padding-left: 40px;
   }
 }
 

@@ -8,7 +8,7 @@
   }
 
   @include vp-767 {
-    padding-top: 68px;
+    padding-top: 70px;
     padding-bottom: 20px;
   }
 }
@@ -39,12 +39,9 @@
 }
 
 .promo__image {
-  //width: auto;
-}
-
-.promo__image-picture {
-  object-fit: cover;
-  height: 500px;
+  width: 660px;
+  height: auto;
+  background-color: $color-sapphire-opacity-05;
 
   @include vp-1023 {
     width: 386px;
@@ -55,6 +52,12 @@
     width: 100%;
     height: auto;
   }
+}
+
+.promo__image-picture {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .promo__description-wrapper {
