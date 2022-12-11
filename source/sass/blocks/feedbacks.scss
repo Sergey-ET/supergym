@@ -88,7 +88,7 @@
   width: 560px;
   height: auto;
   padding: 54px 62px 56px;
-  background: #1C3374;
+  background: $color-resolution-blue;
   overflow-y: scroll;
 
   @include vp-1199 {
@@ -161,6 +161,16 @@
   cursor: pointer;
   z-index: 3;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -12px;
+    width: 44px;
+    height: 44px;
+    background-color: $color-transparent;
+  }
+
   @include vp-1199 {
     top: 58.5%;
   }
@@ -169,6 +179,13 @@
     top: 57.3%;
     width: 12px;
     height: 21px;
+
+    &::after {
+      width: 40px;
+      height: 40px;
+      top: -9px;
+      left: -14px;
+    }
   }
 
   &--prev {

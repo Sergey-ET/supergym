@@ -175,13 +175,13 @@
 .passes__content {
   display: none;
 
+  &:not(.is-hidden) {
+    display: block;
+  }
+
   &--nojs {
     display: block;
   }
-}
-
-.passes__content.is-active {
-  display: block;
 }
 
 .passes__content-list {
@@ -316,7 +316,7 @@
     font-weight: 700;
     font-size: 100px;
     color: $color-whisper;
-    opacity: .48;
+    opacity: 0.48;
     z-index: -1;
 
     @include vp-767 {

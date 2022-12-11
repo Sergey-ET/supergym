@@ -112,7 +112,7 @@
 
   @include vp-1199 {
     width: 187px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     padding-left: 0;
     font-size: 30px;
     line-height: 41px;
@@ -135,9 +135,9 @@
   font-family: $ff-alumni;
   font-style: normal;
   font-weight: 700;
-  font-size: 93px;
+  font-size: 92px;
   line-height: 110px;
-  letter-spacing: 0.045em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   text-align: right;
   color: $color-default-white;
@@ -149,10 +149,7 @@
     font-weight: 800;
     line-height: 86px;
     text-transform: none;
-  }
-
-  @include vp-767 {
-    letter-spacing: 0.037em;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -186,7 +183,6 @@
   height: 100%;
   object-fit: contain;
   object-position: 0 70%;
-
 }
 
 .major__image {
@@ -200,7 +196,7 @@
     margin-left: 0;
     width: 324px;
     height: 390px;
-    }
+  }
 
   @include vp-767 {
     display: none;

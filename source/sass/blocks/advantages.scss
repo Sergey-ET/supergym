@@ -103,7 +103,7 @@
     font-size: 71px;
     line-height: 150%;
     background: $red-to-blue-to-142;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 
     @include vp-1199 {
@@ -113,7 +113,7 @@
     @include vp-767 {
       max-width: 220px;
     }
-  };
+  }
 
   span:last-child {
     display: block;
@@ -244,7 +244,7 @@
       font-size: 74px;
       text-align: center;
       background: linear-gradient($color-default-white);
-      -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
 
       @include vp-1199 {

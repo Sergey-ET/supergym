@@ -59,7 +59,6 @@
 
 .contacts__form-wrapper {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 28px;
 
@@ -75,7 +74,7 @@
 }
 
 .contacts__form input {
-  width: 190px;
+  width: 46.5%;
   margin-left: -2px;
   padding-right: 10px;
   padding-bottom: 3px;
