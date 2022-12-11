@@ -1,14 +1,16 @@
 const scrollToElement = () => {
-  const majorButton = document.querySelector('.major__link');
-  const scrollElement = document.querySelector('#passes');
+  if (document.querySelector('.major') !== null) {
+    const majorButton = document.querySelector('.major__link');
+    const scrollElement = document.querySelector('#passes');
 
-  majorButton.addEventListener('click', (evt) => {
-    evt.preventDefault();
+    majorButton.addEventListener('click', (evt) => {
+      evt.preventDefault();
 
-    scrollElement.scrollIntoView({
-      behavior: 'smooth',
+      scrollElement.scrollIntoView({
+        behavior: 'smooth',
+      });
     });
-  });
+  }
 };
 
 export {scrollToElement};
