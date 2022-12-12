@@ -1,5 +1,5 @@
 const toggleTab = () => {
-  if (document.querySelector('.passes') !== null) {
+  if (document.querySelector('.passes__tabs')) {
     const tabList = document.querySelector('.passes__tabs');
     const contentItems = document.querySelectorAll('.passes__content');
     const tabs = document.querySelectorAll('.passes__tab-link');

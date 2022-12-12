@@ -1,5 +1,5 @@
 const getSlider = () => {
-  if (document.querySelector('.coaches') !== null) {
+  if (document.querySelector('.coaches__swiper')) {
     const coachesSwiper = document.querySelector('.coaches__swiper');
     const coachesSwiperWrapper = document.querySelector('.coaches__swiper-wrapper');
     const coachesButtons = document.querySelectorAll('.coaches__button');

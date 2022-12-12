@@ -1,5 +1,5 @@
 const getCarousel = () => {
-  if (document.querySelector('.feedbacks') !== null) {
+  if (document.querySelector('.feedbacks__swiper')) {
     const feedbacksSwiper = document.querySelector('.feedbacks__swiper');
     const feedbacksSwiperWrapper = document.querySelector('.feedbacks__swiper-wrapper');
     const feedbacksButtons = document.querySelectorAll('.feedbacks__button');

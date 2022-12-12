@@ -1,5 +1,5 @@
 const playVideo = () => {
-  if (document.querySelector('.gym') !== null) {
+  if (document.querySelector('.gym__link')) {
     const playButton = document.querySelector('.gym__link');
     let YT = window.YT;
     // eslint-disable-next-line no-unused-vars
