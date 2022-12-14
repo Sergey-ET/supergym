@@ -151,11 +151,13 @@
 .feedbacks__button {
   display: block;
   position: absolute;
-  top: 59.8%;
+  top: 206px;
   width: 18px;
   height: 34px;
   border: none;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: $color-transparent;
   transition: opacity $trans-default;
   cursor: pointer;
@@ -172,11 +174,11 @@
   }
 
   @include vp-1199 {
-    top: 58.5%;
+    top: 194px;
   }
 
   @include vp-767 {
-    top: 57.3%;
+    top: 237px;
     width: 12px;
     height: 21px;
 
