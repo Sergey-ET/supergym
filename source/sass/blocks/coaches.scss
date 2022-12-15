@@ -10,7 +10,7 @@
 
   @include vp-767 {
     padding-top: 44px;
-    padding-bottom: 70px;
+    padding-bottom: 71px;
   }
 }
 
@@ -26,7 +26,7 @@
   }
 
   @include vp-767 {
-    max-width: 320px;
+    max-width: 100%;
     padding: 0 47px;
   }
 }
@@ -102,8 +102,9 @@
   }
 
   @include vp-767 {
-    width: 226px;
-    height: 274px;
+    min-width: 226px;
+    max-width: 100%;
+    height: 85.5vw;
     padding: 41px 10px 40px;
   }
 
@@ -257,7 +258,8 @@
   @include vp-767 {
     width: 12px;
     height: 21px;
-    top: 207px;
+    //top: 207px;
+    top: 58.5%;
 
     &::after {
       width: 40px;

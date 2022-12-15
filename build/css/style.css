@@ -2971,7 +2971,7 @@ button,
 }
 
 .feedbacks__swiper {
-  width: 560px;
+  width: 100%;
   -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
 }
@@ -2994,22 +2994,25 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-column-gap: 28px;
-  -moz-column-gap: 28px;
-  column-gap: 28px;
-  width: 560px;
+  width: 100%;
   height: auto;
   padding: 54px 62px 56px;
-  background: #1c3374;
-  overflow-y: scroll;
+  background-color: #1c3374;
 }
 
 .feedbacks__swiper-inner {
-  width: 100%;
+  width: 80px;
   height: 80px;
   margin-top: 8px;
   background-color: rgba(16, 38, 84, 0.89);
   border-radius: 50%;
+}
+
+.feedbacks__swiper-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .feedbacks__wrapper h3 {
@@ -3248,7 +3251,7 @@ button,
 
 .page-footer {
   padding-top: 41px;
-  padding-bottom: 42px;
+  padding-bottom: 33px;
   background-color: #030a1a;
 }
 
@@ -3875,12 +3878,7 @@ button,
     padding: 0 56px;
   }
 
-  .feedbacks__swiper {
-    width: 566px;
-  }
-
   .feedbacks__swiper-slide {
-    width: 566px;
     padding: 54px 65px 56px;
   }
 
@@ -4258,11 +4256,11 @@ button,
 
   .coaches {
     padding-top: 44px;
-    padding-bottom: 70px;
+    padding-bottom: 71px;
   }
 
   .coaches__container {
-    max-width: 320px;
+    max-width: 100%;
     padding: 0 47px;
   }
 
@@ -4273,8 +4271,9 @@ button,
   }
 
   .coaches__swiper-slide {
-    width: 226px;
-    height: 274px;
+    min-width: 226px;
+    max-width: 100%;
+    height: 85.5vw;
     padding: 41px 10px 40px;
   }
 
@@ -4295,7 +4294,7 @@ button,
   .coaches__button {
     width: 12px;
     height: 21px;
-    top: 207px;
+    top: 58.5%;
   }
 
   .coaches__button::after {
@@ -4495,12 +4494,7 @@ button,
     padding: 0 47px;
   }
 
-  .feedbacks__swiper {
-    width: 100%;
-  }
-
   .feedbacks__swiper-slide {
-    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -4581,7 +4575,7 @@ button,
   }
 
   .contacts__information-container {
-    padding: 64px 15px 62px;
+    padding: 64px 15px 61px;
   }
 
   .contacts__information h2 {
