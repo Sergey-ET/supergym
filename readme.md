@@ -1,4 +1,4 @@
-# <img align="left" width="32" height="32" alt="Logo" src="./build/favicon/favicon-32x32.png"> "Supergym" - fitness center in Omsk
+# <img align="left" width="32" height="32" alt="Logo" src="./favicon/favicon-32x32.png"> "Supergym" - fitness center in Omsk
 
 <img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/javascript/logo-for-github-2.png">
 
