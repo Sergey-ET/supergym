@@ -1,19 +1,29 @@
-## [Гайд по работе со сборкой](/GUIDE.md) 📕
+# <img align="left" width="32" height="32" alt="Logo" src="./build/favicon/favicon-32x32.png"> "Supergym" - fitness center in Omsk
 
-## Краткая инструкция по работе
-Для начала работы у вас должент быть установлен **Node.js**
+<img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/javascript/logo-for-github-2.png">
 
-### Основные команды для работы
-- Установка - `npm i`
-- Запуск локального сервера без минификаций - `npm start`
-- Запуск локального сервера c минификациями, <br>
-данный вариант не используется в разработке, <br>
-он нужен только для тестов производительности <br>
-на локальном хосте  - `npm run dev`
-- Сборка проекта, минификация скриптов <br>
-и оптимизация изображений перед деплоем на прод - `npm run build`
-- Запуск тестирования на соответствия кодгайдам - `npm test`
-- Создание webp изображений в директории source - `npm run webp`
+Production practice at [HTML Academy](https://htmlacademy.ru).
 
-### Вся разработка ведётся в директории `source`
-### Итоговый код попадает в директорию `build`
+Project completed by [Sergey Troshkin](https://htmlacademy.ru/profile/therealdeveloper)
+
+## Quick Start Guide 📕
+
+To get started you must have **Node.js**
+
+### Basic command
+
+```bash
+npm i # Installation
+npm start # Local server running
+npm run build # Project building, scripting and image optimization before production deploying
+npm run test # Run a code guide test
+npm run webp # Create webp images in source directory
+```
+
+### All development is done in the `source` directory
+
+### The final code goes into the `build` directory
+
+## Project Overview
+
+https://sergey-et.github.io/supergym/
